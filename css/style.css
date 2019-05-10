@@ -69,6 +69,6 @@ header {
     text-align: center;
     color: #fff;
 }
-.prompt1 {
+.prompt-wrap {
    overflow-wrap: anywhere; 
 }

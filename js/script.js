@@ -1,12 +1,12 @@
 document.body.style.backgroundImage = 'url(../img/apple_true.jpg)';
 
 let menu = document.querySelector('.menu'),
-    menuLi = document.querySelectorAll('.menu-item'),
-    column = document.querySelectorAll('.column'),
-    title = document.getElementById('title').textContent = 'МЫ продаем только оригинальную технику',
-    adv = document.querySelector('.adv'),
-    promp = document.getElementById('prompt'),
-    create = document.createElement('li');
+	menuLi = document.querySelectorAll('.menu-item'),
+	column = document.querySelectorAll('.column'),
+	title = document.getElementById('title').textContent = 'МЫ продаем только оригинальную технику',
+	adv = document.querySelector('.adv'),
+	promp = document.getElementById('prompt'),
+	create = document.createElement('li');
 
 
 
@@ -17,4 +17,12 @@ create.textContent = 'ПЯтый пункт';
 column[1].removeChild(adv);
 
 let user = prompt('Ваше мнение о технике?', '');
+promp.classList.add('prompt-wrap');
 promp.textContent = user;
+
+
+btn.addEventListener('click', function (event) {
+	promp.style.fontSize = '20px';
+	promp.style.color = 'red';
+	alert(promp.innerHTML);
+});
